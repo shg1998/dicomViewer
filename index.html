@@ -1,0 +1,242 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dicomViewer</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.css.map">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="view.css">
+    <script src="bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="bootstrap-3.3.7/js/npm.js"></script>
+    <script src="bootstrap-3.3.7/js/verticalMenu.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap-3.3.7/js/tab"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header" class="row">
+
+        </div>
+        <div class="row">
+            <div id="sideBar" class="col-lg-3  col-md-2 col-sm-6 col xs-12"
+                style="margin-left: -14px; background-color: rgb(144, 145, 142)">
+                <div class="tab"
+                    style="height: 48px; margin-left: -14px;margin-right: -14px ; border-radius: 10px; text-align: center; background-color: rgb(34, 246, 250);">
+                    <button class="tablinks" data-toggle="tooltip" data-placement="bottom" title="Table"
+                        style="margin-left: -10px; border-right: 2px solid black;border-radius: 7px;width: 95px;"
+                        onclick="openCity(event, 'London')"><i class="glyphicon glyphicon-blackboard"
+                            style="-moz-transform: scale(3); zoom: 3; margin-left: 30px; height: -4px;"></i></button>
+                    <button class="tablinks" style="margin-left: -10px;" data-toggle="tooltip" data-placement="bottom"
+                        title="Tools" onclick="openCity(event, 'Paris')"><i class="glyphicon glyphicon-wrench"
+                            style="-moz-transform: scale(3); margin-left: 40px;"></i></button>
+                    <button class="tablinks" data-toggle="tooltip" data-placement="bottom" title="Patient info"
+                        onclick="openCity(event, 'Tokyo')">
+                        <i class=" glyphicon glyphicon-user" style="-moz-transform: scale(3); margin-left: 50px;"></i>
+                    </button>
+                </div>
+                <div id="London" class="tabcontent" style="width: 270px; margin-left: -7px;">
+                    <!-- <div id="menubar1"></div> -->
+                    <div id="table2">
+                        <div id="navbar">
+                            <img src="user-image.jpg" width="70" height="50" id="image-field1">
+                        </div>
+                    </div>
+                </div>
+                <div id="Paris" class="tabcontent">
+                    <div id="table4">
+
+                    </div>
+                    <div id="table5">
+
+                    </div>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <div id="table6">
+
+                    </div>
+                    <div id="table7">
+
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="col-lg-9 col-md-10 col-sm-6 col-xs-12 example">
+                <div class="col-lg-1">
+                    <ul>
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="glyphicon glyphicon-th-large"
+                                        data-toggle="tooltip" data-placement="bottom" title="split screen"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom"
+                                    title="split screen"> <i class="glyphicon glyphicon-th"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="glyphicon glyphicon-font" data-toggle="tooltip"
+                                        data-placement="bottom" title="Toggle Annotations"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom" title="Move">
+                                    <i class="glyphicon glyphicon-move"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="glyphicon glyphicon-adjust" data-toggle="tooltip"
+                                        data-placement="bottom" title="Adjust image window"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom"
+                                    title="Brightnes"> <i class="glyphicon glyphicon-certificate"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="glyphicon glyphicon-search" data-toggle="tooltip"
+                                        data-placement="bottom" title="Zoom"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom" title="Length">
+                                    <i class="fas fa-ruler"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="fab fa-app-store-ios" data-toggle="tooltip"
+                                        data-placement="bottom" title="Angle"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom"
+                                    title="Cube Angle"> <i class="fab fa-app-store"
+                                        style="-moz-transform:scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="glyphicon glyphicon-pencil" data-toggle="tooltip"
+                                        data-placement="bottom" title="Pencil"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom" title="Ellips">
+                                    <i class="far fa-circle"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="fa fa-rotate-right" data-toggle="tooltip"
+                                        data-placement="bottom" title="Rotate 90° CW"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom"
+                                    title="Rotate 90° CCW"> <i class="fa fa-rotate-left"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+
+                        <div style="margin-left: 5px;">
+                            <li><button id="vertical-btn1"> <i class="glyphicon glyphicon-share-alt"
+                                        data-toggle="tooltip" data-placement="bottom" title="Undo"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <li><button id="vertical-btn2" data-toggle="tooltip" data-placement="bottom"
+                                    title="Rotate 90° CCW"> <i class="fa fa-rotate-left"
+                                        style="-moz-transform: scale(1.3); margin-top: -2px;"></i></button>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1">
+                    <div>
+                        <button id="btn1"><i class="glyphicon glyphicon-option-horizontal"
+                                style="-moz-transform: scale(2); margin-left: -2px;"></i></button>
+                        <button id="btn2"><i class="glyphicon glyphicon-menu-hamburger"
+                                style="-moz-transform: scale(2); margin-left: -2px;"></i></button>
+                    </div>
+                </div>
+                <div>
+                    <input type="file" style="width: 0px; height: 0px;" id="file-field" hidden="hidden"
+                        onchange="previewImage(event)" />
+                    <button type="button" id="custom-btn">choose a file</button>
+                    <span id="custom-text">No File Chosen</span>
+                    <br><br>
+                    <div>
+                        <img src="user-image.jpg" width="730" height="540" id="image-field"
+                            style="border-radius: 5px;border: 2px solid rgb(30, 28, 49); margin-top: -15px; margin-left: -70px; background-color: gray;">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg-11"></div>
+        <div id="footer" class="row" style=" margin-left: -33px;">
+            <footer class="page-footer font-small blue">
+                <div class="footer-copyright text-center py-3" style="color: lightgrey;"> Shg1998</div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function previewImage(event) {
+        var reader = new FileReader();
+        var imageField = document.getElementById("image-field");
+        var imageField1=document.getElementById("image-field1");
+        reader.onload = function () {
+            if (reader.readyState == 2) {
+                imageField.src = reader.result;
+                imageField1.src=reader.result;
+            }
+        }
+        reader.readAsDataURL(event.target.files[0])
+    }
+    const realFileBtn = document.getElementById("file-field");
+    const customBtn = document.getElementById("custom-btn");
+    const customTxt = document.getElementById("custom-text");
+    customBtn.addEventListener("click", function () {
+        realFileBtn.click();
+    });
+    realFileBtn.addEventListener("change", function () {
+        if (realFileBtn.value) {
+            customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+        }
+        else {
+            customTxt.innerHTML = "No File Chosen";
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,374 @@
+#exampleFormControlFile1 {
+    padding-top: 18px;
+    padding-left: 3px;
+    box-shadow: 5px;
+}
+
+#header {
+    border-bottom: 2px solid rgb(83, 70, 70);
+    height: 60px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin-left: -27px;
+    width: inherit;
+}
+
+#footer {
+
+    border-top: 2px solid rgb(83, 70, 70);
+    height: 25px;
+    border-bottom: 2px solid rgb(83, 70, 70);
+    border-right: 2px solid rgb(83, 70, 70);
+    border-left: 2px solid rgb(83, 70, 70);
+    background-color: rgb(148, 81, 81);
+    border-radius: 10px;
+
+}
+
+#move {
+    background-color: rgb(247, 232, 175);
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+    width: 50px;
+    height: 25px;
+    margin-top: 4px;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+#move:hover {
+    background-color: rgb(255, 230, 131);
+    border: 2px solid darkgoldenrod;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}
+
+#sideBar {
+    height: 585px;
+    border-right: 2px solid rgb(6, 158, 204);
+    border-left: 2px solid rgb(6, 158, 204);
+    border-radius: 4px;
+    
+}
+
+#content {
+    height: 585px;
+    border-right: 2px solid rgb(83, 70, 70);
+    border-radius: 4px;
+    background-color:black;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+
+}
+
+.dropbtn {
+    background-color: rgb(247, 232, 175);
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+    margin-left: -45px;
+    margin-top: 4px;
+    width: 50px;
+    height: 25px;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.dropdown {
+
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    background-color: rgb(255, 230, 131);
+    border: 2px solid darkgoldenrod;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.mrcode-rotate img {
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.mrcode-rotate img:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+ul {
+    border-radius: 5px;
+    list-style-type: none;
+    margin-left: -29px;
+    padding: 0;
+    width: 50px;
+    background-color: #9cff8ff5;
+    height: 100%;
+    border-right: 2px solid teal;
+}
+
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#vertical-btn1 {
+    margin-left: 1px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 230, 131);
+    border: 2px solid goldenrod;
+}
+
+#vertical-btn2 {
+    height: 25px;
+    margin-left: -14px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 230, 131);
+    border: 2px solid goldenrod;
+}
+
+#vertical-btn1:hover {
+    margin-left: 1px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(230, 190, 33);
+    border: 2px solid rgb(99, 72, 4);
+}
+
+#vertical-btn2:hover {
+    height: 25px;
+    margin-left: -14px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(230, 190, 33);
+    border: 2px solid rgb(99, 72, 4);
+}
+
+/* .example{
+    background-image: url('Wallpaper\ \(101\).jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:170px;
+    width:875px;
+    opacity: 0.5;
+} */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+#btn1 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(233, 48, 208);
+    border-radius: 5px;
+    margin-left: 727px;
+    margin-top: 490px;
+}
+
+#btn2 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(55, 216, 55);
+    border-radius: 5px;
+    margin-left: 727px;
+    margin-top: 8px;
+}
+
+#btn1:hover {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(196, 30, 168);
+    border-radius: 5px;
+}
+
+#btn2:hover {
+    width: 30px;
+    height: 30px;
+    background-color: forestgreen;
+    border-radius: 5px;
+}
+
+#table2 {
+    height: 150px;
+    width: 250px;
+    margin-left: -3px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(5, 173, 41);
+    margin-bottom: -10px;
+}
+
+.tabcontent {
+    height: 520px;
+
+    margin-left: -10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: burlywood;
+    margin-bottom: -10px;
+}
+
+#table3 {
+    height: 250px;
+    width: 250px;
+    margin-left: -3px;
+    border-radius: 6px;
+    background-color: rgb(13, 183, 196);
+    margin-bottom: -10px;
+    margin-top: 16px;
+}
+
+#table4 {
+    height: 250px;
+    width: 250px;
+    margin-left: -3px;
+    border-radius: 6px;
+    background-color: rgb(195, 10, 219);
+    margin-bottom: -10px;
+    margin-top: 2px;
+}
+
+#table5 {
+    height: 250px;
+    width: 250px;
+    margin-left: -3px;
+    border-radius: 6px;
+    background-color: rgb(235, 213, 18);
+    margin-bottom: -10px;
+    margin-top: 16px;
+}
+
+#table6 {
+    height: 250px;
+    width: 250px;
+    margin-left: -3px;
+    border-radius: 6px;
+    background-color: rgb(245, 42, 42);
+    margin-bottom: -10px;
+    margin-top: 2px;
+}
+
+#table7 {
+    height: 250px;
+    width: 250px;
+    margin-left: -3px;
+    border-radius: 6px;
+    background-color: rgb(21, 131, 11);
+    margin-bottom: -10px;
+    margin-top: 16px;
+}
+#custom-btn{
+    margin-left: -65px;
+    margin-top: 3px;
+    padding: 5px;
+    color: white;
+    background-color: #009578;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#custom-btn:hover{
+    background-color: #00b28f;
+}
+#custom-text{
+    margin-left: 5px;
+    font-family: sans-serif;
+    color: #aaa;
+}
+#image-field1{
+   border-top-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+   border: 1px solid rgb(8, 156, 141);
+   margin-top: 3px;
+   margin-left: 3px;
+}
+#menubar1{
+    background-color: violet;
+    width: 250px;
+    align-items: center;
+    height: 50px;
+}
